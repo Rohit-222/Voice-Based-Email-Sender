@@ -19,7 +19,7 @@ def mic():
         print (data)
         return data.lower()
 
-dict = {"jojo":"bunnyerugurala22@gmail.com"}
+dict = {"bunny":"/*reciever's mail id*/"}
 
 def send_mail(reciever,subject ,body):
 
@@ -27,8 +27,8 @@ def send_mail(reciever,subject ,body):
     server.starttls()
     server.login("sender's mail ID", "sender's password")
     email = EmailMessage()
-    email["From"]= "rohit18erugurala@gmail.com"
-    email["To"] = "bunnyerugurala22@gmail.com"
+    email["From"]= "sender"
+    email["To"] = "reciever"
     email["Subject"] = subject
     email.set_content(body)
     server.send_message(email)
